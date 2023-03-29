@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Must Do It</title>
+    <link rel="stylesheet" href="list_style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo" id="banner_logo"><br>
+            Must Do It
+        </div>
+        <aside>
+            <div style="display: flex; flex-direction: row;">
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" value="Username">
+                    <br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" value="1234">
+                    <br><br>
+                </form>
+                <div style="margin-left: 10%;">
+                    <a href="list.html" class="button">Log In</a>
+                    <a href="list.html" class="button">Sign Up</a>
+                      
+                </div>
+            </div>
+        </aside>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="list.html">My To-do List</a></li>
+                <li><a href="detail.html">View Task Detail</a></li>
+                <li><a href="createNew.html">Create New Task</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class = "createNew">
+<form class="createNew">
+  <label for="taskName">Task name</label><br>
+  <input type="text" id="taskName" name="taskName" required><br>
+
+  <label for="taskCategory">Task category</label><br>
+  <input type="text" id="taskCategory" name="taskCategory" required><br>
+
+  <label for="dueDate">Due date</label><br>
+  <input type="date" id="dueDate" name="dueDate" class="dueDate" required><br>
+
+  <label for="status">Status</label><br>
+  <select id="status" name="status" required>
+    <option value="" disabled selected>Select status</option>
+    <option value="notStarted">Not started</option>
+    <option value="inProgress">In progress</option>
+    <option value="completed">Completed</option>
+  </select><br>
+
+  <label for="location">Location</label><br>
+  <input type="text" id="location" name="location" required><br>
+
+  <input type="submit" value="Submit">
+</form>
+</div>
+        <footer>© 2023 Must Do It</footer>
+      </body>
+        
+</html>
